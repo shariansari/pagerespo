@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>testing</title>
+
+    <style>
+         body{
+    background: url("	https://www.gharpeshiksha.com/ds/img/core-img/texture.webp");
+   }
+        nav {
+            background: #7a9bf7;
+        }
+
+        .card {
+            margin: 5px;
+            box-shadow: 1px 4px 4px grey;
+
+        }
+
+        .fix {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .two {
+            width: 40vw;
+
+            border-radius: 10px;
+        }
+
+        .two1 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .main {
+
+            display: grid;
+            /* grid-template-columns: auto auto auto; */
+
+        }
+
+        @media only screen and (max-width:1500px) and (min-width:1350px) {
+            .five {
+                margin-left: 20vw !important;
+            }
+
+        }
+
+        @media only screen and (max-width:1350px) {
+            .fix {
+                flex-direction: column;
+            }
+
+            .one {
+                width: auto !important;
+            }
+
+            .two {
+                width: 90vw !important;
+                margin: auto;
+            }
+
+            .two1 {
+                grid-template-columns: auto;
+            }
+
+            .three {
+                width: 80vw;
+
+            }
+
+            .five {
+                margin-left: 20px;
+            }
+
+
+
+        }
+
+        @media screen and (max-width:1500px) {
+            .main {
+                grid-template-columns: auto auto auto;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .main {
+                grid-template-columns: auto auto;
+            }
+
+
+        }
+
+        @media screen and (max-width:650px) {
+            .main {
+                grid-template-columns: auto;
+            }
+
+            .four {
+                margin-left: 7vw;
+            }
+
+            .six {
+                width: 60vw !important;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light mb-3">
+
+        <button style="margin-left: 10px" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+
+                </li>
+                <li class="nav-item">
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="five" style="color:black;font-weight: 700;">Selectcity</span>
+                    </a>
+                    <div class="dropdown-menu two container" aria-labelledby="navbarDropdown">
+                        <div style="background-color:#297cba;padding:6px">
+                            <div class="input-group six" style="width:38vw;margin:auto;">
+                                
+                                    <input class="form-control mr-sm-2 cityname" type="search"
+                                        placeholder="Search City" aria-label="Search" style="width: 17vw">
+                                
+                                <button class="btn btn-outline-warning my-0 my-sm-0 four" type="submit"><span
+                                        style="color:black;">Search</span></button>
+                            </div>
+                        </div>
+                        <div class="two1">
+
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Agra</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Ahmedabad</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Bangalore</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Bhopal</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Chennai</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Delhi</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Faridabad</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city"> 
+                                        Ghaziabad</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Hyderabad</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Indore</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Jaipur</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Kalyan</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Kanpur</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">kolkata</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Lucknow</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">ludhiana</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Meerut</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Mumbai</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Nagpur</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Nashik</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Patna</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Pune</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Rajkot</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Srinagar</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Surat</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Thane</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Varanasi</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Rajasthan</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Vadodara</span></a>
+                            <a class="dropdown-item" href="#"><i style="color: Orange"
+                                    class="bi bi-caret-right-fill"></i><span class="city">Telangana</span></a>
+                        </div>
+
+
+
+
+                    </div>
+                </li>
+                <li class="nav-item">
+
+                </li>
+            </ul>
+            <form class="form-inline my-2 mx-3 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                    style="width: 60vw">
+                <button class="btn btn-outline-warning my-2 my-sm-0 four" type="submit"><span
+                        style="color:black;">Search</span></button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+
+
+
+
+        <!-- heading -->
+
+        <!-- main -->
+        <div class="fix">
+            <div style="margin-right: 5px;" class="boxleft ">
+                <!-- left -->
+                <div class="container shadow p-3 mb-5 bg-white rounded">
+                    <div style="width:18vw" class="accordion one" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button style="background-color: #7a9bf7; " class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span style="color:black;font-weight: 700;"> Locality/Pincode</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body "
+                                    style="display:flex;align-items: center;justify-content: center;">
+                                    <input class="three" style="font-size:17px" type="text"
+                                        placeholder="Locality/Pincode">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button style="background-color: #7a9bf7;"; class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span style="color:black;font-weight: 700;">Course</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body"
+                                    style="display:flex;align-items: center;justify-content: center;">
+                                    <input class="three" style="font-size:17px" type="text" placeholder="Enter Course">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button style="background-color: #7a9bf7" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span style="color:black;font-weight: 700;">Subject</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body"
+                                    style="display:flex;align-items: center;justify-content: center;">
+                                    <input class="three" style="font-size:17px" type="text" placeholder="Enter Subject">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button style="background-color: #7a9bf7" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                    <span style="color:black;font-weight :700">Hourly Price</span>
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div style="margin-left: 5px;">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Upto Rs 200
+                                        </label>
+
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Rs 201 - Rs 500
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Rs 501 - Rs 1000
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Above Rs 1000
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfive">
+                                <button style="background-color: #7a9bf7" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                    <span style="color:black;font-weight :700">Tution Type</span>
+                                </button>
+                            </h2>
+                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div style="margin-left: 5px;">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Home Tutions
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            At Tutor At Home
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            At Institute
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label">
+                                            Online Tuition
+                                        </label>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cards -->
+            <div class="right card">
+                <div class="row row-cols-1 row-cols-md-1 g-4">
+                    <div class="col">
+                        <h1 style="text-align:center"><span style="font-size:1.5rem">Home Tuitions / Part time Tutoring
+                                jobs</span></h1>
+                        <hr>
+                        <div class="main container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script>
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
+  
+</body>
+
+</html>
